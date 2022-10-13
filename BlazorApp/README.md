@@ -9,4 +9,6 @@ cd BlazorApp
 dotnet watch run
 
 
+ni -Type File TodoItem.cs
+
 ```
