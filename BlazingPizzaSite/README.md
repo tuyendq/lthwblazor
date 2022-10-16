@@ -9,8 +9,15 @@ dotnet new blazorserver -o BlazingPizzaSite -f net6.0
 dotnet new razorcomponent -n PizzaBrowser -o Pages
 
 
-# Add model PizzaSpecial
+# Add model PizzaSpecial.cs
 ni -Type File .\Model\PizzaSpecial.cs -Force
+
+# Add model Pizza.cs
+ni -Type File .\Model\Pizza.cs -Force
+ni -Type File .\Model\Topping.cs -Force
+ni -Type File .\Model\PizzaTopping.cs -Force
+ni -Type File .\Model\Address.cs -Force
+ni -Type File .\Model\Order.cs -Force
 
 
 # Add packages to support database access
@@ -27,5 +34,10 @@ ni -Type File .\Controllers\SpecialsController.cs -Force
 # Load data into database
 ni -Type File .\Data\SeedData.cs -Force
 
+# Add a new order configuration dialog
+ni -Type File .\Shared\ConfigurePizzaDialog.razor
+
+# Handle the state of an order
+ni -Type File .\Services\OrderState.cs -Force
 
 ```
