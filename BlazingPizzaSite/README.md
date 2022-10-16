@@ -21,4 +21,7 @@ dotnet add package System.Net.Http.Json
 # Add database context
 ni -Type File .\Data\PizzaStoreContext.cs -Force
 
+# Add Controller
+ni -Type File .\Controllers\SpecialsController.cs -Force
+
 ```
