@@ -13,5 +13,10 @@ dotnet new razorcomponent -n PizzaBrowser -o Pages
 ni -Type File .\Model\PizzaSpecial.cs -Force
 
 
+# Add packages to support database access
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package System.Net.Http.Json
+
 
 ```
