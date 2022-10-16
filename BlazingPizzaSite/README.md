@@ -24,4 +24,8 @@ ni -Type File .\Data\PizzaStoreContext.cs -Force
 # Add Controller
 ni -Type File .\Controllers\SpecialsController.cs -Force
 
+# Load data into database
+ni -Type File .\Data\SeedData.cs -Force
+
+
 ```
