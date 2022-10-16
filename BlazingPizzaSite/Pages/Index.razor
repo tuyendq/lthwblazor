@@ -3,13 +3,8 @@
 
 <PageTitle>Index</PageTitle>
 
-<h1>Welcome to Blazing Pizza</h1>
-
-<p>@welcomeMessage</p>
-<SurveyPrompt Title="How is Blazor working for you?" />
-
 <div class="main">
-    <h1>Blazing Pizzq</h1>
+    <h1>Blazing Pizza</h1>
     <ul class="pizza-cards">
         @if (specials != null)
         {
@@ -28,8 +23,6 @@
 </div>
 
 @code {
-    private string welcomeMessage = "However you like your pizzas, we can deliver them fast!";
-
     List<PizzaSpecial> specials = new();
     
     protected override void OnInitialized()
