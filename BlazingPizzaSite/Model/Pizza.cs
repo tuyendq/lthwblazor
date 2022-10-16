@@ -14,6 +14,7 @@ public class Pizza
     public PizzaSpecial Special { get; set; }
     public int SpecialId { get; set; }
     public int Size { get; set; }
+    public List<PizzaTopping>? Toppings { get; set; }
 
     public decimal GetBasePrice()
     { 
