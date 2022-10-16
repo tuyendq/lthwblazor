@@ -18,5 +18,7 @@ dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package System.Net.Http.Json
 
+# Add database context
+ni -Type File .\Data\PizzaStoreContext.cs -Force
 
 ```
