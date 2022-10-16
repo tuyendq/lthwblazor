@@ -6,6 +6,12 @@
 dotnet new blazorserver -o BlazingPizzaSite -f net6.0
 
 # Add a new component
-dotnet new razorcomponent -n PizzaBrowser -o Pages -f net6.0
+dotnet new razorcomponent -n PizzaBrowser -o Pages
+
+
+# Add model PizzaSpecial
+ni -Type File .\Model\PizzaSpecial.cs -Force
+
+
 
 ```
