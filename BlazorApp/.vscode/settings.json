@@ -1,0 +1,5 @@
+{
+  "appService.preDeployTask": "publish-release",
+  "appService.deploySubpath": "bin\\Release\\net6.0\\publish",
+  "appService.defaultWebAppToDeploy": "/subscriptions/ec9e2689-c134-405a-8a20-59f93e4dc95c/AppServices/subscriptions/ec9e2689-c134-405a-8a20-59f93e4dc95c/resourceGroups/rg-alwaysfree/providers/Microsoft.Web/sites/thetodolist"
+}
