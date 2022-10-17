@@ -45,13 +45,13 @@
                         @configuredPizza.GetFormattedTotalPrice()
                     </div>
                 </div>
-                
+                <a @onclick="@(() => OrderState.RemoveConfiguredPizza(configuredPizza))">x</a>
             }
         </div>
     }
     else
     {
-        <div class="empty-card">
+        <div class="empty-cart">
             Choose a pizza <br> to get started
         </div>
     }
