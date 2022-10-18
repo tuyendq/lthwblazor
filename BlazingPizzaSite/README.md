@@ -19,6 +19,8 @@ ni -Type File .\Model\PizzaTopping.cs -Force
 ni -Type File .\Model\Address.cs -Force
 ni -Type File .\Model\Order.cs -Force
 
+ni -Type File .\Model\OrderWithStatus.cs -Force
+
 
 # Add packages to support database access
 dotnet add package Microsoft.EntityFrameworkCore
@@ -39,5 +41,13 @@ ni -Type File .\Shared\ConfigurePizzaDialog.razor
 
 # Handle the state of an order
 ni -Type File .\Services\OrderState.cs -Force
+
+
+# Add checkout page
+ni -Type File .\Pages\Checkout.razor
+
+# Add Order Controller (same folder as OrderState.cs)
+ni -Type File .\Services\OrderController.cs
+
 
 ```
